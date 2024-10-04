@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(text => {
             console.log('Raw Response:', text); 
-            alert('Formulario enviado con éxito');
+            //alert('Formulario enviado con éxito');
+            window.location.href = "https://agradecimientosc.geene.com.py/";
             form.reset();
         })
         .catch(error => {
