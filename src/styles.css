@@ -6,139 +6,142 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: "Arial", sans-serif; /* Cambiado a Arial */
-    background-color: hsl(180, 100%, 100%);
+    font-family: "Arial", sans-serif;
+    background-color: #f0f4f8;
 }
-
+ 
 .form-container {
-    background-color: rgba(220, 255, 255, 0.881);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(55, 54, 54, 0.1);
-    width: 45%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 500px;
+    margin: 20px;
 }
-
-.form-container h2 {
+ 
+.form-container h3 {
     text-align: center;
-    color: rgb(8, 182, 251);
+    color: #2090ff;
+    font-size: 1.8em;
+    font-family: "Arial";
+    margin-bottom: 20px;
 }
-
-.form-container h5 {
-    text-align: left;
-    color: rgb(8, 182, 251);
-}
-
+ 
 .input-name-company,
 .email-phone {
     display: flex;
     gap: 10px;
+    width:100%;
 }
-
-.email-phone input {
-    width: 50%;
-    border-radius: 5px; 
-    border: 1px solid #07c1f0;
+ 
+.email-phone input, .input-name-company input {
+    width: 100%;
+    border: 1px solid #2090ff;
+    padding: 15px;
+    font-size: 1rem;
+    background-color:white;
+    color: #333;
 }
-
-
-.dni input {
-    border: 1px solid #07c1f0;
+ 
+input::placeholder {
+    color: #999;
 }
-
-/* Estilos para textarea (mensaje) */
+ 
 .message textarea {
-    border: 1px solid #07c1f0;
-    font-family: "Arial", sans-serif; /* Fuente Arial aplicada */
-    margin-bottom: -10px; /* Añadido un margen inferior consistente */
-    margin-top: 8px
+    border: 1px solid #2090ff;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
-
-.message label {
-    font-family: "Arial", sans-serif; /* Fuente Arial aplicada al label */
-    font-weight: bold;
-    color: rgb(8, 182, 251); /* Mismo estilo del h5 */
-}
-
-.input-name-company input {
-    border: 1px solid #07c1f0; 
-}
-
+ 
 .checkbox {
-    display: flex; 
+    display: flex;
     align-items: center;
+    gap:10px;
+    margin-top: 15px;
 }
-
+ 
 .input-check {
-    margin-right: 10px;
+    margin-top: 4px;
 }
-
+ 
 .p-ckeck {
     margin: 0;
+    font-size: 0.9rem;
+    color:#555;
 }
-
+ 
 input,
 textarea {
     width: 96.5%;
     padding: 10px;
-    margin-bottom: 10px; /* Manteniendo un margen uniforme */
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgb(243, 243, 243);
-    font-family: "Arial", sans-serif; /* Aplicado Arial también a los inputs y textarea */
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
 }
-
+ 
 input[type="submit"] {
-    background-color: #4356df;
+    background-color: #0d4d74;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    width: 30%;
+    padding: 15px 40px;
+    width: auto;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin: 20px auto;
     display: block;
-    margin: 0 auto;
-    margin-top: 5%;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
-
+ 
 input[type="submit"]:hover {
-    background-color: #58a5bf;
+    background-color: #003f7f;
 }
-
-/* Estilos para el div producto */
+ 
+ 
 .producto {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 2px;
-    gap: 10px; /* Espacio entre label y input */
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
 }
-
+ 
 .producto label {
     font-weight: bold;
-    font-size: 0.9rem; /* Reducido el tamaño de la fuente */
-    color: rgb(8, 182, 251); /* Aplicado el mismo estilo del h5 */
-    text-align: left; 
-    width: 50%; /* El label ocupará el 50% del contenedor */
+    font-size: 1rem;
+    color: #333;
 }
-
+ 
 .producto select {
-    width: calc(38% + 2cm); /* Inicia en el 50% del contenedor y se le agrega 2 cm de ancho */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #07c1f0; /* Mismo estilo de borde que los otros controles */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: rgb(243, 243, 243); /* Mismo fondo que los otros controles */
-    font-family: "Arial", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px, solid #2090ff;
+    background-color: white;
+    font-family: "Arial" sans-serif;
+ 
 }
-
-/* Ajustes para el control de archivo */
-.file-upload h5 {
-    margin-bottom: 5px; /* Reducido el espacio entre el texto y el input de archivo */
-}
-
-.file-upload input[type="file"] {
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #07c1f0;
-    border-radius: 5px;
+ 
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+ 
+    .input-name-company, .email-phone {
+        flex-direction: column;  
+    }
+ 
+    input[type="submit"] {
+        width: 100%;
+    }
+ 
+    .producto label, .producto select {
+        width: 100%;
+    }
 }
