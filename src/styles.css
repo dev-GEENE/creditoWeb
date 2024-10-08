@@ -20,7 +20,7 @@ body {
 }
 
  
-.form-container h3 {
+.form-container h2 {
     text-align: center;
     color: #2090ff;
     font-size: 1.8em;
@@ -29,7 +29,7 @@ body {
 }
  
 .input-name-company,
-.email-phone {
+.email-phone, .dni {
     display: flex;
     gap: 10px;
     width:100%;
@@ -38,24 +38,10 @@ body {
 .email-phone input, .input-name-company input {
     width: 100%;
     border: 1px solid #2090ff;
-    padding: 15px;
+    padding: 10px;
     font-size: 1rem;
     background-color:white;
     color: #333;
-}
- 
-input::placeholder {
-    color: #999;
-}
- 
-.message textarea {
-    border: 1px solid #2090ff;
-    font-family: "Arial", sans-serif;
-    margin-bottom: 10px;
-    padding: 15px;
-    background-color: white;
-    font-size: 1rem;
-    margin-bottom: 10px;
 }
  
 .checkbox {
@@ -66,7 +52,7 @@ input::placeholder {
 }
  
 .input-check {
-    margin-top: 4px;
+    margin-top: 2px;
 }
  
 .p-ckeck {
@@ -75,16 +61,15 @@ input::placeholder {
     color:#555;
 }
  
-input,
-textarea {
-    width: 96.5%;
+input {
+    width: 100.5%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
     font-family: "Arial", sans-serif;
     box-sizing: border-box;
+    border: 1px solid #2090ff;
 }
  
 input[type="submit"] {
@@ -103,30 +88,6 @@ input[type="submit"] {
  
 input[type="submit"]:hover {
     background-color: #003f7f;
-}
- 
- 
-.producto {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 20px;
-}
- 
-.producto label {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #333;
-}
- 
-.producto select {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px, solid #2090ff;
-    background-color: white;
-    font-family: "Arial" sans-serif;
- 
 }
  
 @media (max-width: 768px) {

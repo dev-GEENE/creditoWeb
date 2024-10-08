@@ -6,18 +6,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Obtener los valores de los campos del formulario
         const nombre = document.getElementById('name').value;
+        const apellido = document.getElementById('apellido').value;
         const email = document.getElementById('email').value;
         const telefono = document.getElementById('phone').value;
-        const mensaje = document.getElementById('message').value;
+        const fechaDeNacimiento = document.getElementById('fecha_nacimiento').value;
         const dni = document.getElementById('dni').value;
         const autorizacion = document.getElementById('terms').checked;
 
+        // Formatear la fecha de nacimiento a DD/MM/AÑo
+        const fechaParts = fechaDeNacimiento.split('-');
+        const fechaFormateada =  `${fechaParts[2]}/${fechaParts[1]}/${fechaParts[0]}`;
+
+        const nombreCompleto = `${nombre} ${apellido}`;
+
         // Crear un objeto JSON
         const datosFormulario = {
-            "Nombre": nombre,
+            "nombrecompleto": nombreCompleto,
             "Email": email,
             "Telefono": telefono,
-            "Mensaje": mensaje,
+            "FechaDeNacimiento": fechaFormateada,
             "NroDoc": dni,
             "Autorizacion": autorizacion
         };
