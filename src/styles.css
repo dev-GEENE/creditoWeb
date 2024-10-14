@@ -5,11 +5,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 10;
+    margin: 0; 
     font-family: "Arial", sans-serif;
     background-color: #f0f4f8;
 }
- 
+
 .form-container {
     background-color: white;
     padding: 20px;
@@ -17,37 +17,37 @@ body {
     width: 40%;
     max-width: 500px;
     margin: 20px;
+    box-sizing: border-box;
 }
 
- 
-.form-container h3 {
+.form-container h2 {
     text-align: center;
     color: #2090ff;
     font-size: 1.8em;
     font-family: "Arial";
     margin-bottom: 20px;
 }
- 
+
 .input-name-company,
 .email-phone {
     display: flex;
     gap: 10px;
-    width:100%;
+    width: 100%;
 }
- 
-.email-phone input, .input-name-company input {
+
+.email-phone input, .input-name-company input, .fecha_nacimiento input {
     width: 100%;
     border: 1px solid #2090ff;
     padding: 15px;
     font-size: 1rem;
-    background-color:white;
+    background-color: white;
     color: #333;
 }
- 
+
 input::placeholder {
     color: #999;
 }
- 
+
 .message textarea {
     border: 1px solid #2090ff;
     font-family: "Arial", sans-serif;
@@ -57,24 +57,24 @@ input::placeholder {
     font-size: 1rem;
     margin-bottom: 10px;
 }
- 
+
 .checkbox {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     margin-top: 15px;
 }
- 
+
 .input-check {
     margin-top: 4px;
 }
- 
+
 .p-ckeck {
     margin: 0;
     font-size: 0.9rem;
-    color:#555;
+    color: #555;
 }
- 
+
 input,
 textarea {
     width: 96.5%;
@@ -86,7 +86,7 @@ textarea {
     font-family: "Arial", sans-serif;
     box-sizing: border-box;
 }
- 
+
 input[type="submit"] {
     background-color: #0d4d74;
     color: white;
@@ -100,49 +100,44 @@ input[type="submit"] {
     display: block;
     transition: background-color 0.3s ease;
 }
- 
+
 input[type="submit"]:hover {
     background-color: #003f7f;
 }
- 
- 
-.producto {
+
+.fecha_nacimiento {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
- 
-.producto label {
-    font-weight: bold;
+
+.fecha_nacimiento input {
+    border: 1px solid #2090ff; /* Misma línea de borde */
+    padding: 15px; /* Mismo padding */
     font-size: 1rem;
+    background-color: white;
     color: #333;
 }
- 
-.producto select {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px, solid #2090ff;
-    background-color: white;
-    font-family: "Arial" sans-serif;
- 
+
+.fecha_nacimiento label {
+    color: #333;
 }
- 
+
 @media (max-width: 768px) {
     .form-container {
         width: 90%;
     }
- 
+
     .input-name-company, .email-phone {
-        flex-direction: column;  
+        flex-direction: column;
     }
- 
+
     input[type="submit"] {
         width: 100%;
     }
- 
-    .producto label, .producto select {
+
+    .fecha_nacimiento label {
         width: 100%;
     }
 }
