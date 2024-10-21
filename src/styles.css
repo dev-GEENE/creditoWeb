@@ -29,7 +29,7 @@ body {
 }
 
 .input-name-company,
-.email-phone {
+.email-phone, .dni {
     display: flex;
     gap: 10px;
     width: 100%;
@@ -38,7 +38,7 @@ body {
 .email-phone input, .input-name-company input, .fecha_nacimiento input {
     width: 100%;
     border: 1px solid #2090ff;
-    padding: 15px;
+    padding: 10px;
     font-size: 1rem;
     background-color: white;
     color: #333;
@@ -58,6 +58,7 @@ input::placeholder {
     margin-bottom: 10px;
 }
 
+ 
 .checkbox {
     display: flex;
     align-items: center;
@@ -66,7 +67,7 @@ input::placeholder {
 }
 
 .input-check {
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .p-ckeck {
@@ -82,9 +83,9 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
     font-family: "Arial", sans-serif;
     box-sizing: border-box;
+    border: 1px solid #2090ff;
 }
 
 input[type="submit"] {
@@ -104,6 +105,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #003f7f;
 }
+ 
 
 .fecha_nacimiento {
     display: flex;
