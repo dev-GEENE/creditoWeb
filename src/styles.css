@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 10;
     font-family: "Arial", sans-serif;
-    background-color: #f0f4f8;
+    background-color: #d9e2ec ;
 }
  
 .form-container {
@@ -88,6 +88,31 @@ input[type="submit"] {
  
 input[type="submit"]:hover {
     background-color: #003f7f;
+}
+
+input[type="date"]::placeholder {
+    color: #888; 
+}
+
+input[type="date"]:valid {
+    color: #333; 
+}
+
+input[type="date"]:invalid {
+    color: #888; 
+}
+
+input[type="date"] {
+    color: #888; 
+    border: 1px solid #2090ff;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+}
+
+input::placeholder {
+    font-size: 1rem;
 }
  
 @media (max-width: 768px) {

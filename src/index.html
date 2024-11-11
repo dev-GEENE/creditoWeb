@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Solicitud de crédito</h2>
+        <h2>Solicitud de Crédito</h2>
         <form action="https://prod-28.brazilsouth.logic.azure.com:443/workflows/ec0be2cecb414940a85232b3f08a2a75/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=RIoZYN2iAZ0haEBpZIM10oxxb7fsdJjDh5R-sNh2azc" method="POST" class="input-form" enctype="multipart/form-data">
             <div class="input-name-company">
-                <input type="text" id="name" name="name" placeholder="Nombres" required >
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <input type="text" id="name" name="name" class="formulario__input" placeholder="*Nombres" required>
+                <input type="text" id="apellido" name="apellido" class="formulario__input" placeholder="*Apellidos" required>
             </div>
+            
             
             <div class="dni">
                 <input type="text" id="dni" name="dni" pattern="[A-Za-z0-9]+" title="El DNI debe contener solo letras y números" placeholder="* Número de documento" required>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <input type="date" id="fecha_nacimiento" class="fecha_nacimiento" name="fecha_nacimiento" required>
             </div>
            
             <div class="email-phone">
