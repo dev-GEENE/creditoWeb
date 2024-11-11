@@ -5,11 +5,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 10;
+    margin: 0; 
     font-family: "Arial", sans-serif;
     background-color: #d9e2ec ;
 }
- 
+
 .form-container {
     background-color: white;
     padding: 20px;
@@ -17,9 +17,9 @@ body {
     width: 40%;
     max-width: 500px;
     margin: 20px;
+    box-sizing: border-box;
 }
 
- 
 .form-container h2 {
     text-align: center;
     color: #2090ff;
@@ -27,51 +27,52 @@ body {
     font-family: "Arial";
     margin-bottom: 20px;
 }
- 
+
 .input-name-company,
-.email-phone, .dni {
+.email-phone,
+.dni-fecha {
     display: flex;
     gap: 10px;
-    width:100%;
-}
- 
-.email-phone input, .input-name-company input {
     width: 100%;
-    border: 1px solid #2090ff;
-    padding: 10px;
-    font-size: 1rem;
-    background-color:white;
-    color: #333;
 }
- 
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #2090ff;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.message textarea {
+    font-family: "Arial", sans-serif;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     margin-top: 15px;
 }
- 
+
 .input-check {
-    margin-top: 2px;
+    margin-top: 4px;
 }
- 
+
 .p-ckeck {
     margin: 0;
     font-size: 0.9rem;
-    color:#555;
+    color: #555;
 }
- 
-input {
-    width: 100.5%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: "Arial", sans-serif;
-    box-sizing: border-box;
-    border: 1px solid #2090ff;
-}
- 
+
 input[type="submit"] {
     background-color: #0d4d74;
     color: white;
@@ -85,7 +86,7 @@ input[type="submit"] {
     display: block;
     transition: background-color 0.3s ease;
 }
- 
+
 input[type="submit"]:hover {
     background-color: #003f7f;
 }
@@ -119,16 +120,14 @@ input::placeholder {
     .form-container {
         width: 90%;
     }
- 
-    .input-name-company, .email-phone {
-        flex-direction: column;  
+
+    .input-name-company,
+    .email-phone,
+    .dni-fecha {
+        flex-direction: column;
     }
- 
+
     input[type="submit"] {
-        width: 100%;
-    }
- 
-    .producto label, .producto select {
         width: 100%;
     }
 }

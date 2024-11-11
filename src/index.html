@@ -16,15 +16,20 @@
             </div>
             
             
-            <div class="dni">
+            <div class="dni-fecha">
                 <input type="text" id="dni" name="dni" pattern="[A-Za-z0-9]+" title="El DNI debe contener solo letras y números" placeholder="* Número de documento" required>
-                <input type="date" id="fecha_nacimiento" class="fecha_nacimiento" name="fecha_nacimiento" required>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
             </div>
            
             <div class="email-phone">
                 <input type="email" id="email" name="email" placeholder="* Email" required>
                 <input type="tel" id="phone" name="phone" placeholder="* Teléfono" required>
-            </div>                         
+            </div>                 
+
+            <div class="message">
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje"></textarea> 
+            </div>
+        
             <div class="conditions">
                 <div class="checkbox">
                     <input type="checkbox" id="terms" name="terms" required class="input-check">
